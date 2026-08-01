@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://www.kovaaks.com/.well-known/*
+host: https://www.kovaaks.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known/ discovery documents are published on the KovaaK's / The Meta
+  website. The Meta ships a consumer gaming product (KovaaK's Aim Trainer on
+  Steam) and does not expose a first-party developer API, OAuth/OIDC server, or
+  API catalog. Absence recorded as valid negative data; no WellKnown pointer
+  wired.

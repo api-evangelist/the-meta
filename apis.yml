@@ -1,7 +1,29 @@
 aid: the-meta
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-meta.png
 name: The Meta
-description: The Meta is a company surfaced as a portfolio company of canaan-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  The Meta is the gaming-performance company behind KovaaK's Aim Trainer
+  (formerly "Kovaak 2.0: The Meta"), a PC esports training platform distributed
+  on Steam that pairs guided, skill-specific training modules with Kovaak's
+  Sandbox aim trainer and its library of 2,600+ user-generated scenarios. The
+  platform lets FPS players measure, diagnose, and improve their mechanical aim
+  and in-game habits, feeding back insights on weaknesses so players can target
+  their practice. Founded by Duncan Haberly, Jay Brown, and Chris Olson and
+  backed by Canaan (Beta Fund), Village Global, Courtside VC, betaworks, GFR,
+  and Akatsuki Entertainment Technology (AET Fund). The Meta operates a consumer
+  game product, a community wiki, and a Discord community; it does not currently
+  publish a public first-party developer API.
 url: https://raw.githubusercontent.com/api-evangelist/the-meta/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Gaming
+- Esports
+- Aim Trainer
+- Game Training
+- FPS
+- Performance
+- Consumer Software
+- Steam
 apis: []
+common:
+- type: DomainSecurity
+  url: security/the-meta-domain-security.yml
+- type: Website
+  url: https://www.kovaaks.com/
+- type: Documentation
+  url: https://wiki.kovaaks.com/
+- type: Support
+  url: https://discord.gg/kovaaks
+- type: TermsOfService
+  url: https://www.kovaaks.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.kovaaks.com/privacy-policy
+- type: Pricing
+  url: https://store.steampowered.com/app/824270/KovaaKs/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
